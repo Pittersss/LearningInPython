@@ -1,37 +1,47 @@
 #PolarZenit
-from dataclasses import replace
-from operator import index
-
-password = str(input("Diga a sua senha "))
+password = str(input("Escreva algo para encriptar: "))
 password = password.upper()
+characters = []
+encryptWord =  ""
 for x in password:
-     if x == "P" or "Z":
-         if x == "P":
-             password = password.replace("P", "Z")
-         if x == "Z":
-             password = password.replace("Z", "P")
-     if x == "O" or "E":
-         if x == "O":
-             password = password.replace("O", "E")
-         if x == "E":
-             password = password.replace("E", "O")
-     if x == "L" or "N":
-         if x == "L":
-             password = password.replace("L", "N")
-         if x == "N":
-             password = password.replace("N", "L")
-     if x == "A" or "I":
-         if x == "A":
-            password = password.replace("A", "I")
-         if x == "I":
-            password = password.replace("I","A")
-     if x == "R" or "T":
-         if x == "R":
-           password = password.replace("R", "T")
-         if x == "T":
-             password = password.replace("T", "R")
+    characters.append(x)
+dex = len(characters)
+x = 0
+while x < dex:
+    #P e Z
+    if characters[x] == "P" or "Z":
+        if characters[x] == "P":
+            characters[x]  = "Z"
+        elif characters[x] == "Z":
+            characters[x] = "P"
+    #O e E
+    if characters[x] == "O" or "E":
+        if  characters[x] == "O":
+            characters[x] = "E"
+        elif characters[x] ==  "E":
+            characters[x] = "O"
+    
+    #L e N
+    if characters[x] == "L" or "N":
+        if characters[x] == "L":
+            characters[x] = "N"
+        elif characters[x] == "N":
+            characters[x] = "L"
+    
+    #A e I
+    if characters[x] == "A" or "I":
+        if characters[x] == "A":
+            characters[x] = "I"
+        elif characters[x] == "I":
+            characters[x] = "A"
 
-
-print(password)
-
-
+    #R e T
+    if characters[x] == "R" or "T":
+        if characters[x] == "R":
+            characters[x] = "T"
+        if characters[x] == "T":
+            characters[x] = "R"
+    x += 1
+for z in characters:
+    encryptWord += z
+print(encryptWord)
