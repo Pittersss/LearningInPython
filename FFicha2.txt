@@ -1,0 +1,3 @@
+Nome: Pedro
+Idade: 12
+CPF: 12121212211
