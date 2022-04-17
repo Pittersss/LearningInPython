@@ -5,7 +5,7 @@ import os
 fileName = input("Diga o nome do arquivo que deseja criar: \n") + ".txt"
 arquivo = open(fileName, 'w+')
 texto = arquivo.readlines()
-if texto == NULL:
+if texto == " ":
  newName = input("Qual é o seu nome: \n")
  print("\n")
  
