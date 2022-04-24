@@ -198,16 +198,34 @@
       #print("Tua mãe")
 
 #Questão 17
-QuantityLlata = 18
-QuantityLgalao = 3.6
-valueLata = 80
-valueGalao = 25
-quantityLitros = float
+#import math
+#QuantityLlata = 18
+#QuantityLgalao = 3.6
+#valueLata = 80
+#valueGalao = 25
+#quantityLitros = float
 
-while True:
-   try:
-      mQuad = float(input("Quantos metros quadrados você pintará? "))
-      quantityLitros = mQuad/6
-      print("Custará")
-   except  ValueError:
-      print("")
+#while True:
+   #try:
+      #mQuad = float(input("Quantos metros quadrados você pintará? "))
+      #quantityLitros = mQuad/6    
+      #print(quantityLitros)
+      #print("Você poderá comprar {} {} Custará: {}$ \n".format(math.ceil(quantityLitros/QuantityLlata),"lata(s)", math.ceil((quantityLitros/QuantityLlata)) * valueLata))
+      #print("Você poderá comprar {} {} Custará: {}$ \n".format(math.ceil(quantityLitros/QuantityLgalao),"galõe(s)", math.ceil((quantityLitros/QuantityLgalao)) * valueGalao))
+      #if(quantityLitros % 18 != 0 and quantityLitros > 18):
+         #num = quantityLitros
+         #index = 0
+        # while(num >= 20): #Folga de, aproximadamente, 10%
+            #index += 1
+            #num -= 18
+         #gal = math.ceil(num/QuantityLgalao)
+         #print("Você poderá comprar {} lata(s) e {} galão(ões) Custará: {}$ \n".format(index, gal, (index * valueLata) + (gal * valueGalao)))
+   #except  ValueError:
+      #print("Ocorreu um erro nos caracteres digitados, tente novamente!")
+
+#Questão 18
+#import math
+#tamanhoArquivo = float(input("Qual é o tamanho do arquivo em Mb? ")) #MB
+#velInternet = float(input("Qual é a velocidade da sua internet em Mbps? ")) #Mbps
+#calc = math.ceil((tamanhoArquivo/velInternet)/60)
+#print("Seu arquivo vai levar {} minutos, aproximadamente".format(calc))
